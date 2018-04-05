@@ -7,7 +7,7 @@ module.exports = {
         if (!category){
             res.status(200).send(swag);
         }else{
-            const filteredSwag = swag.filter(swag.categoy === category);
+            const filteredSwag = swag.filter(swag.category === category);
             res.status(200).send(filteredSwag);
         }
         }
